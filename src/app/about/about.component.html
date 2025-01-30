@@ -1,0 +1,10 @@
+<p>This is about component</p>
+
+<p>Name of the care are below:</p>
+
+<div>
+    <h1 *ngFor="let car of cars">
+       {{car}}
+    </h1>
+    <button (click)="addCars()" aria-placeholder="Add Cars">Add</button>
+</div>
