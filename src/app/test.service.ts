@@ -9,6 +9,5 @@ export class TestService {
 
   customers=["Adr","TCS","Wipro","Infosys","IBM"];
 
-  Cars=["Scoda","BMW","AUDI","Benz","TATA"
-  ]
+  Cars=["Scoda","BMW","AUDI","Benz","TATA"]
 }
