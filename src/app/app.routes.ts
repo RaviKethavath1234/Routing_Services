@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthenService } from './authen.service';
 
 
 export const routes: Routes = [
@@ -17,7 +18,7 @@ export const routes: Routes = [
         path:"header",component:HeaderComponent
     },
     {
-        path:"contact",component:ContactComponent
+        path:"contact",component:ContactComponent, canActivate:[AuthenService] 
     },
     {
         path:"**",component:NotFoundComponent
